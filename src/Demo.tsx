@@ -5,7 +5,7 @@ import Box from '@mui/joy/Box';
 export default function BasicButtons() {
   return (
     <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
-      <Button>Button</Button>
+      <Button>Button 1</Button>
       <Button disabled>Disabled</Button>
       <Button loading>Loading</Button>
     </Box>
