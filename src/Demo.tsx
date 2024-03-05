@@ -12,39 +12,14 @@ export default function BasicButtons() {
     <Box>
       
     <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
-      <Button>Button 1</Button>
+      <Button>Button 2</Button>
       <Button disabled>Disabled</Button>
       <Button loading>Loading</Button>
       <Button >Click me!</Button>
-
-  
+      
     </Box>
 
-    <Box>
-      <FormControl
-      id="Id"
-      required
-      size="sm"
-      color="primary">
-        <FormLabel>
-          Label
-        </FormLabel>
-      Input
-      placeholder="Placeholder"
-      name="Name"
-      type="tel"
-      autoComplete="on"
-      autoFocus
-      error
-      fullWidth
-      defaultValue="DefaultValue"
-      variant="outlined" />
-      <FormHelperText>
-        Help!
-      </FormHelperText>
-    </FormControl>
 
-    </Box>
     
     </Box>
   );
