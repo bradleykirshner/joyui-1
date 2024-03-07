@@ -9,6 +9,7 @@ function valueText(value: number) {
 export default function StepsSlider() {
   return (
     <Box sx={{ width: 300 }}>
+      <Button>component 2</Button>
       <Slider
         aria-label="Small steps"
         defaultValue={0.00000005}
