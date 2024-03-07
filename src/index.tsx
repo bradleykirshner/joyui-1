@@ -4,7 +4,7 @@ import { StyledEngineProvider, CssVarsProvider } from '@mui/joy/styles';
 
 import Demo from './BasicButtons';
 import Demo2 from './Demo2';
-import { StepSlider } from './slider-component'
+import { StepSlider } from './slider-component';
 
 ReactDOM.createRoot(document.querySelector("#root")!).render(
   <React.StrictMode>
