@@ -15,6 +15,8 @@ ReactDOM.createRoot(document.querySelector("#root")!).render(
 
         <Demo2 />
         <Demo2 />
+
+        <StepSlider />
         
       </CssVarsProvider>
     </StyledEngineProvider>
