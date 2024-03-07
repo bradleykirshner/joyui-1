@@ -8,6 +8,7 @@ export default function BasicButtons() {
       <Button>Button</Button>
       <Button disabled>Disabled</Button>
       <Button loading>Loading</Button>
+      <Button>Click me</Button>
     </Box>
   );
 }
