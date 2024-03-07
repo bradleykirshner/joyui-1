@@ -7,7 +7,7 @@ export default function BasicButtons() {
     <Box>
       
     <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
-      <Button>Button 00</Button>
+      <Button>Button Demo1</Button>
       <Button disabled>Disabled</Button>
       <Button loading>Loading</Button>
       <Button>Click me</Button>
