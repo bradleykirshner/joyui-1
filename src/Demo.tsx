@@ -13,7 +13,7 @@ export default function BasicButtons() {
       <Button>Click me</Button>
 
     </Box>
-
+{/* 
     <Box>
       <FormControl id="Id" required size="sm" color="primary">
       <FormLabel>
@@ -36,7 +36,7 @@ export default function BasicButtons() {
       </FormHelperText>
         
       </FormControl>
-   </Box>
+   </Box> */}
 
   </Box>
   );
