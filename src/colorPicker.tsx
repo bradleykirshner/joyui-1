@@ -140,4 +140,4 @@ const ButtonAndColorPicker = (props: Props) => (
   </svg>
 );
 
-export { ButtonAndColorPicker };
+export default colorPicker;
