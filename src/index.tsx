@@ -1,6 +1,6 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
-import { StyledEngineProvider, CssVarsProvider } from '@mui/joy/styles';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import SignInPage from './signInPage'; // Import the SignInPage component
 import ColorPicker from './colorPicker'; // Import the ColorPicker component
 
