@@ -7,9 +7,8 @@ interface Props extends SVGProps<SVGSVGElement> {
 
 const SignInPage = (props: Props) => (
   <svg
-    width="1em"
-    height="1em"
-    viewBox="0 0 1440 1024"
+    width="100%"
+    height="100%"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     {...props}
