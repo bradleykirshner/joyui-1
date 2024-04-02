@@ -5,7 +5,7 @@ interface Props extends SVGProps<SVGSVGElement> {
 
 }
 
-const colorPicker = (props: Props) => (
+const ColorPicker = (props: Props) => (
   <svg
     width="1em"
     height="1em"
