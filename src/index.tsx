@@ -16,6 +16,7 @@ if (rootElement) {
                 </Routes>
                 <div style={{ textAlign: 'center', marginTop: '20px' }}>
                     <Link to="/signinpage">Sign In Page</Link>
+                </div>
                 <div style={{ textAlign: 'center', marginTop: '20px' }}>
                     <Link to="colorpicker">Color Picker</Link>
                 </div>
