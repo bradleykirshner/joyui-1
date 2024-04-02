@@ -140,4 +140,4 @@ const ColorPicker = (props: Props) => (
   </svg>
 );
 
-export default colorPicker;
+export default ColorPicker;
