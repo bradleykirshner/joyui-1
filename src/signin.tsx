@@ -8,6 +8,7 @@ export default function SignIn() {
   const [password, setPassword] = React.useState('');
 
   const handleSignIn = () => {
+    // You can perform sign-in logic here, such as sending a request to your backend
     console.log('Signing in with:', email, password);
 
     // Reset form fields after submission
@@ -17,6 +18,7 @@ export default function SignIn() {
 
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', gap: 2, alignItems: 'center' }}>
+      <h2>Welcome to BoardX!</h2>
       <TextField
         label="Email"
         variant="outlined"
@@ -31,8 +33,10 @@ export default function SignIn() {
         onChange={(e) => setPassword(e.target.value)}
       />
       <Button variant="contained" onClick={handleSignIn}>
-        Sign In
+        Log In
       </Button>
+      <Button variant="text">Forgot Password</Button>
     </Box>
   );
 }
+
