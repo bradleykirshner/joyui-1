@@ -89,4 +89,4 @@ const SignInPage = (props: Props) => (
   </svg>
 );
 
-export { SignInPage };
+export default SignInPage;
