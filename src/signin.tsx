@@ -8,8 +8,11 @@ export default function SignIn() {
   const [password, setPassword] = React.useState('');
 
   const handleSignIn = () => {
-    // You can perform sign-in logic here, such as sending a request to your backend
     console.log('Signing in with:', email, password);
+
+    // Reset form fields after submission
+    setEmail('');
+    setPassword('');
   };
 
   return (
