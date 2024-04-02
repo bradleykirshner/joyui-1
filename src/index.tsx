@@ -12,7 +12,7 @@ root.render(
 <React.StrictMode>
     <BrowserRouter>
         <Routes>
-            <Route path="/signinpage" element={<SignIn />} />
+            <Route path="/signinpage" element={<SignInPage />} />
             <Route path="/colorpicker" element={<ColorPicker />} />
         </Routes>
             <div style={{ textAlign: 'center', marginTop: '20px' }}>
