@@ -36,7 +36,7 @@ const SignIn = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <Button variant="contained" type="submit" style={{backgroundColor: '#FF006B', justifyContent: 'center', width: '100%'}}>
-            Log In
+            Log in
           </Button>
           <Link href="#" variant="body2" style={{backgroundColor: 'transparent', color: '#FF006B', justifyContent: 'center'}}>
             Forgot Password?

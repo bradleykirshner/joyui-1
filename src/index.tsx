@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import SignInPage from './signInPage'; // Import the SignInPage component
+import SignUpPage from './signUpPage'; // Import the SignUpPage component
 import ColorPicker from './colorPicker'; // Import the ColorPicker component
 
 const rootElement = document.getElementById('root');
@@ -14,15 +15,19 @@ root.render(
         <Routes>
             <Route path="/signinpage" element={<SignInPage />} />
             <Route path="/colorpicker" element={<ColorPicker />} />
+            <Route path="/signuppage" element={<SignUpPage />} />
         </Routes>
 
         <div style={{ textAlign: 'center', marginTop: '20px' }}>
             <Link to="/signinpage">Sign In Page</Link>
         </div>
+        <div style={{ textAlign: 'center', marginTop: '20px'}}>
+            <Link to="/signuppage">Sign Up Page</Link>
+        </div>
         <div style={{ textAlign: 'center', marginTop: '20px' }}>
             <Link to="colorpicker">Color Picker</Link>
         </div>
-        
+
     </BrowserRouter>
 </React.StrictMode>
     );
