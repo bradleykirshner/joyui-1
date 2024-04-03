@@ -4,6 +4,7 @@
     "@emotion/styled": "latest",
     "@mui/joy": "latest",
     "@mui/material": "latest",
+    "@mui/icons-material": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "react": "latest",
