@@ -30,7 +30,7 @@ const ColorPicker = () => {
   };
 
   return (
-    <div style={{ height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <Box style={{ height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       <IconButton onClick={handleClick} aria-label="color-picker">
         <ColorLensIcon />
       </IconButton>
@@ -64,8 +64,8 @@ const ColorPicker = () => {
           </MenuItem>
         </Box>
       </Popover>
-      <div style={{ width: '100px', height: '100px', backgroundColor: selectedColor, borderRadius: '50%', marginLeft: '16px' }}></div>
-    </div>
+      <Box style={{ width: '100px', height: '100px', backgroundColor: selectedColor, borderRadius: '50%', marginLeft: '16px' }}></Box>
+    </Box>
   );
 };
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Typography, TextField, Button, Checkbox, FormControlLabel, Link } from '@mui/material';
+import { Typography, TextField, Button, Checkbox, FormControlLabel, Link, Box } from '@mui/material';
 
 const SignUp = () => {
     const [name, setName] = useState('');
@@ -20,8 +20,8 @@ const SignUp = () => {
 
     return (
 
-        <div style={{ height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <div style={{ maxWidth: '456px', width: '100%', padding: '24px 28px 36px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '8px', boxShadow: '0px 6px 12px -2px #000000' }}>
+        <Box style={{ height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Box style={{ maxWidth: '456px', width: '100%', padding: '24px 28px 36px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '8px', boxShadow: '0px 6px 12px -2px #000000' }}>
                 <form onSubmit={handleSignUp} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '16px', width: '100%' }}>
                     <Typography variant="h4">Collaboration starts here🚀</Typography>
                     <TextField
@@ -68,8 +68,8 @@ const SignUp = () => {
                         Already have an account? <Link href="#" style={{ color: '#FF006B' }}>Sign in instead</Link>
                     </Typography>
                 </form>
-            </div>
-        </div>
+            </Box>
+        </Box>
 
     );
 };

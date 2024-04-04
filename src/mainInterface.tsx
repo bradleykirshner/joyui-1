@@ -15,7 +15,7 @@ const MainInterface = () => {
     };
 
     return (
-        <div style={{ height: '100vh', width: '100vw', display: 'flex' }}>
+        <Box style={{ height: '100vh', width: '100vw', display: 'flex' }}>
             <AppBar position="static"
                 style={{ backgroundColor: '#FFFFFF' }}>
                 <Toolbar
@@ -84,7 +84,7 @@ const MainInterface = () => {
                 </Box>
             </Box>
             <Divider />
-        </div>
+        </Box>
     );
 };
 
