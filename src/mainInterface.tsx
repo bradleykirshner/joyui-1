@@ -15,7 +15,7 @@ const MainInterface = () => {
     };
 
     return (
-        <div style={{ height: '100vh', width: '100vw', display: 'flex', backgroundColor: '#FFFFFF' }}>
+        <div style={{ height: '100vh', width: '100vw', display: 'flex' }}>
             <AppBar position="static"
                 style={{ backgroundColor: '#FFFFFF' }}>
                 <Toolbar
@@ -59,7 +59,7 @@ const MainInterface = () => {
                     <Avatar alt="Profile" src="/profile.jpg" />
                 </Toolbar>
             </AppBar>
-            <Box position="fixed" display="flex" flexDirection="row" alignItems="center" marginTop="64px">
+            <Box position="absolute" display="flex" flexDirection="row" marginTop="64px">
                 <Box display="flex" flexDirection="column" gap='16px' margin="10px">
                     <Button variant="contained" color="primary" style={{ color: '#32383E', backgroundColor: 'transparent', marginTop: '25px' }}>All Boards</Button>
                     <Button variant="contained" color="primary" style={{ color: '#32383E', backgroundColor: 'transparent' }}>Favorites</Button>
@@ -70,10 +70,10 @@ const MainInterface = () => {
                         </IconButton>
                     </Box>
                 </Box>
-                <Box ml={2}>
-                    <Typography variant="h5">All Boards</Typography>
+                <Box width="auto">
+                    <Typography variant="h5" margin="5px">All Boards</Typography>
                     <Box display="flex" justifyContent="center"
-                        style={{ backgroundColor: '#FF006B', borderRadius: '8px', width: '100%', height: '100%' }}>
+                        style={{ backgroundColor: '#FF006B', borderRadius: '8px', width: '310px', height: '200px' }}>
                         <IconButton color="primary"
                             style={{ color: '#FFFFFF' }}>
                             <AddIcon fontSize="large" />
