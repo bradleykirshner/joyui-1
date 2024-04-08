@@ -13,7 +13,8 @@ const CreateRoom = () => {
     };
 
     return (
-        <Box style={{ height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        // keep first box in comment to fit in dialog on main interface
+        // <Box style={{ height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <Box style={{ maxWidth: '424px', height: 'auto', width: '100%', padding: '32px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', borderRadius: '4px', boxShadow: 'rgba(217, 161, 177, 0.54) 1px 2px 4px' }}>
                 <Box style={{ margin: '0px 0px 24px', display: 'flex', width: '100%', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer' }}>
                     <Typography variant="h2" style={{ fontSize: '28px' }}>Create Room</Typography>
@@ -39,7 +40,7 @@ const CreateRoom = () => {
                     </Button>
                 </Box>
             </Box>
-        </Box>
+        // </Box>
     );
 };
 

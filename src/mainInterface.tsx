@@ -1,10 +1,12 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, Button, Avatar, Box, Switch, Divider, TextField } from '@mui/material';
+import { AppBar, Toolbar, Typography, IconButton, Menu, MenuItem, Button, Avatar, Box, Switch, Divider, TextField, Dialog } from '@mui/material';
 import { Menu as MenuIcon, Search as SearchIcon, Brightness4 as DarkModeIcon, Brightness7 as LightModeIcon, Add as AddIcon } from '@mui/icons-material';
+import CreateRoom from './createRoom';
 
 const MainInterface = () => {
     const [anchorEl, setAnchorEl] = React.useState<HTMLElement | null>(null);;
     const open = Boolean(anchorEl);
+    const [openDialog, setOpenDialog] = React.useState(false);
 
     const handleMenu = (event: React.MouseEvent<HTMLButtonElement>) => {
         setAnchorEl(event.currentTarget);
@@ -12,6 +14,14 @@ const MainInterface = () => {
 
     const handleClose = () => {
         setAnchorEl(null);
+    };
+
+    const handleDialogOpen = () => {
+        setOpenDialog(true);
+    };
+
+    const handleDialogClose = () => {
+        setOpenDialog(false);
     };
 
     return (
@@ -65,7 +75,7 @@ const MainInterface = () => {
                     <Button variant="contained" color="primary" style={{ color: '#32383E', backgroundColor: 'transparent' }}>Favorites</Button>
                     <Box display="flex" flexDirection="row">
                         <Typography variant="h6" style={{ justifyContent: 'center', alignSelf: 'center', flexGrow: 1, textTransform: 'uppercase', fontSize: 'max(0.75em, 0.625rem)', boxSizing: 'border-box' }}>Rooms</Typography>
-                        <IconButton color="primary" style={{ width: '20px', height: '20px', backgroundColor: '#FF006B', color: 'white', alignSelf: 'center', borderRadius: '5px' }}>
+                        <IconButton color="primary" onClick={handleDialogOpen} style={{ width: '20px', height: '20px', backgroundColor: '#FF006B', color: 'white', alignSelf: 'center', borderRadius: '5px' }}>
                             <AddIcon style={{ width: '15px', height: '15px' }} />
                         </IconButton>
                     </Box>
@@ -84,6 +94,18 @@ const MainInterface = () => {
                 </Box>
             </Box>
             <Divider />
+
+            // in order to close when x or create buttons are hit, would need to reference variables in this file on createRoom.tsx
+            <Dialog
+                open={openDialog}
+                onClose={handleDialogClose}
+                maxWidth={false}
+                PaperProps={{
+                    style: { width: '33.5%', maxWidth: 'none', boxShadow: 'rgba(217, 161, 177, 0.54) 1px 2px 4px' }
+                }} >
+                <CreateRoom />
+            </Dialog>
+
         </Box>
     );
 };
